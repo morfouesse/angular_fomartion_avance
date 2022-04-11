@@ -1,0 +1,6 @@
+<form #form="ngForm" (ngSubmit)="onSubmitForm(form)">
+  <label for="emailInput">Inscrivez-vous pour recevoir notre newsletter !</label>
+  <input id="emailInput" name="userEmail" type="email" [(ngModel)]="userEmail">
+  <input id="nameInput" name="userName" type="text" [(ngModel)]="userName">
+  <button type="submit">OK!</button>
+</form>

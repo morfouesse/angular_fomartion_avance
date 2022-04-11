@@ -1,0 +1,17 @@
+.snaps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snap {
+  display: flex;
+  // la taille que peu prendre l'item dans le flex container
+  flex: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .snap {
+    flex: 100%;
+  }
+}
