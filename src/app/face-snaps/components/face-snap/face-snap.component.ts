@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-face-snap',
   templateUrl: './face-snap.component.html',
-  styleUrls: ['./face-snap.component.scss']
+  styleUrls: ['./face-snap.component.less']
 })
 export class FaceSnapComponent implements OnInit {
   // me permet de recevoir une donnée du parent

@@ -5,7 +5,7 @@ import {delay, interval, map, Observable, of, Subject, switchMap, take, takeUnti
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.less']
 })
 export class LandingPageComponent implements OnInit, OnDestroy {
 
