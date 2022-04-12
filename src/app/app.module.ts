@@ -4,7 +4,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {CoreModule} from "./core/core.module";
 import {LandingPageModule} from "./landing-page/landing-page.module";
-import {FaceSnapsModule} from "./face-snaps/face-snaps.module";
+import {HttpClientModule} from "@angular/common/http";
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -14,8 +15,9 @@ import {FaceSnapsModule} from "./face-snaps/face-snaps.module";
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FaceSnapsModule,
-    LandingPageModule
+    LandingPageModule,
+    HttpClientModule,
+    AuthModule
   ],
   bootstrap: [AppComponent]
 })
