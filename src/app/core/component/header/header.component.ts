@@ -15,6 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onAddNewFaceSnap() {
-    this.router.navigateByUrl('/form-reactive').then(r => r);
+    this.router.navigateByUrl('/facesnaps/create').then();
   }
 }

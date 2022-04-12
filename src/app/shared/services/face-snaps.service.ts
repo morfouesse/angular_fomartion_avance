@@ -9,7 +9,7 @@ import {FormGroup} from "@angular/forms";
   providedIn: 'root'
 })
 export class FaceSnapsService {
-  
+
   constructor(private http: HttpClient) {
   }
 
