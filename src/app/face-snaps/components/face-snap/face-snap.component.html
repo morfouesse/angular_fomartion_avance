@@ -2,7 +2,7 @@
   <div>
     <h2>{{ snap.title }}</h2>
     <!-- ici on arrondie à l'entier  'chiffresMinAvantVirgule.chiffresMinAprèsVirgule-chiffresMaxAprèsVirgule' -->
-    <h2 ngClass="rate" *ngIf="snap.rate">{{ snap.rate | number : '1.0-0' }}/5</h2>
+    <h2 *ngIf="snap.rate">{{ snap.rate | number : '1.0-0' }}/5</h2>
   </div>
   <p>Mis en ligne {{ snap.createdDate | date: 'à HH:mm, le d MMMM yyyy'}}</p>
   <img [src]="snap.imageUrl" [alt]="snap.title">

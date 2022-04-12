@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {map, Observable} from "rxjs";
-import {IFaceSnap} from "../models/i-face-snap.model";
-import {FaceSnapsService} from "../shared/services/face-snaps.service";
+import {map, Observable, tap} from "rxjs";
+import {IFaceSnap} from "../../../models/i-face-snap.model";
+import {FaceSnapsService} from "../../../shared/services/face-snaps.service";
 import {Router} from "@angular/router";
 
 
@@ -44,8 +44,9 @@ export class FormReactiveComponent implements OnInit {
   }
 
   onSubmitForm() {
-    this.snapsService.addFaceSnap(this.snapForm.value);
-    this.router.navigateByUrl("/facesnaps");
+    this.snapsService.addFaceSnap(this.snapForm).pipe(
+      tap(() => this.router.navigateByUrl('/facesnaps'))
+    ).subscribe();
   }
 
 }
