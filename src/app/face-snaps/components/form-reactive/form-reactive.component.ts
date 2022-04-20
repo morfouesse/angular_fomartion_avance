@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-form-reactive',
   templateUrl: './form-reactive.component.html',
-  styleUrls: ['./form-reactive.component.scss']
+  styleUrls: ['./form-reactive.component.less']
 })
 export class FormReactiveComponent implements OnInit {
 

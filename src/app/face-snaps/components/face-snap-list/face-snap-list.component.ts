@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
 @Component({
   selector: 'app-face-snap-list',
   templateUrl: './face-snap-list.component.html',
-  styleUrls: ['./face-snap-list.component.scss']
+  styleUrls: ['./face-snap-list.component.less']
 })
 export class FaceSnapListComponent implements OnInit {
   faceSnaps$: Observable<IFaceSnap[]> = new Observable<IFaceSnap[]>();

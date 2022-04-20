@@ -1,0 +1,41 @@
+@blue-dark: #1d3cb2;
+@blue-light: #6b81f3;
+header {
+  border: #4e934e;
+  top: auto;
+  left: 0;
+  text-align: center;
+  background-color: @blue-dark;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+
+  a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .active {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .button-header {
+    background-color: white;
+    box-shadow: none;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @blue-light;
+    }
+  }
+
+}
+
